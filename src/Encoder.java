@@ -8,9 +8,15 @@ import java.util.Iterator;
 
 
 public class Encoder {
+	static private int ALPHABET_SIZE = 27;
 	static ArrayList <Integer> num_frq = new ArrayList<Integer>();
 	
-	public static int[] convertIntegers(ArrayList<Integer> integers){
+	/* only used for different alphabets, currently not implemented	*/
+	static void incrementAlphabet(){
+		ALPHABET_SIZE++;
+	}
+	
+	private static int[] convertIntegers(ArrayList<Integer> integers){
 	    int[] ret = new int[integers.size()];
 	    Iterator<Integer> iterator = integers.iterator();
 	    for (int i = 0; i < ret.length; i++)
@@ -18,6 +24,21 @@ public class Encoder {
 	        ret[i] = iterator.next().intValue();
 	    }
 	    return ret;
+	}
+	
+	static private double entropy(){
+		double h = 0;
+		
+		for(int x : num_frq){
+			
+			double y = x;
+			
+			if(y <= 0)
+				continue;
+			System.out.print("h = "+ h + " - " + "y = " + y + "\n");
+			h += ( y /ALPHABET_SIZE) * ( Math.log(y/ALPHABET_SIZE) / Math.log(2.0));
+		}
+		return -h;
 	}
 	
 	public static void main(String[] args) throws Exception{
@@ -34,15 +55,15 @@ public class Encoder {
 			num_frq.add(0);
 		
 		for (int i = 0; i<num_frq.size(); i++)
-			System.out.println(i + " : " + num_frq.get(i));
+			System.out.println(i + " - " + num_frq.get(i));
 		
-		// create huffman tree from frequencies
+		/* create huffman tree from frequencies	*/
 		HuffmanTree ht = new HuffmanTree(convertIntegers(num_frq));
 		ht.displayCodes();
-	}
-	
-	
-	
+		
+		System.out.println("Entropy " + entropy());
+		
+	}	
 }
 
 /*
