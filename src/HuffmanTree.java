@@ -212,15 +212,39 @@ public class HuffmanTree
 	 * Show all non-zero codes
 	 *
 	 */
-	public void displayCodes()
+	public String returnCodes()
 	{
+		String x = "";
 		for (int i = 0; i < 256; i++)
 		{
 			if (huffmanLengths[i] > 0)
 			{
-				System.out.println(i + " : " + toBinaryString(huffmanCodes[i], huffmanLengths[i]));
+				x += i + ": " + toBinaryString(huffmanCodes[i], huffmanLengths[i]) + "\n";
 			}
 		}
+		return x;
+	}
+	public String returnChars()
+	{
+		String x = "";
+		for (int i = 0; i < 256; i++)
+		{
+			if (huffmanLengths[i] > 0)
+			{
+				x += Character.toString ((char) i) + ": " + toBinaryString(huffmanCodes[i], huffmanLengths[i]) + "\n";
+			}
+		}
+		return x;
+	}
+	
+	public void displayCodes()
+	{
+		System.out.println(this.returnCodes());
+	}
+	
+	public void displayChars()
+	{
+		System.out.println(this.returnChars());
 	}
 
 	/**
