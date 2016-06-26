@@ -123,20 +123,21 @@ public class Encoder {
 		int k = 10000;
 		String encExt = ".enc1";
 		String decExt = ".dec1";
-		Frequency.generateText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
+		String output = Frequency.generateText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
+		Writer.writeFile(output, encExt, decExt);
 		System.out.println("Generated and written " + k + " random charecters in testText, encoded them into testText" + encExt +" and decoded them in testText"+ decExt + "\n");
 	
 	/* PART 4	*/
 		System.out.println("PART 4");
 		System.out.println("bits per symbol for " + k + " charecters: " + round(bitsPerSymbol(".enc1"), 3));
-		System.out.println("a " + round(diffrence(bitsPerSymbol(".enc1"), entropy() ), 3) + "% difference from entropy" );
+		System.out.println("a " + round(diffrence(bitsPerSymbol(".enc1"), entropy() ), 3) + "% difference from entropy\n");
 		
 	/* PART 5	*/
 		System.out.println("PART 5");
-		
 		encExt = ".enc2";
 		decExt = ".dec2";
-		
+		output = Frequency.generateDoubleText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
+		System.out.println(output);
 		
 	}
 }
@@ -243,12 +244,13 @@ class Reader {
 		String filePath = Writer.getPath() + encExt;
 		File input = new File(filePath);
 		
-		String encoded = "";
+		StringBuilder encoded = new StringBuilder();
+
 		try {
 	    	String line;
 		    br = new BufferedReader(new FileReader(input));
 		    while ((line = br.readLine()) != null) {
-		    	encoded += line;
+		    	encoded .append(line);
 		    }
 	    } 
 		catch (IOException e) {
@@ -263,7 +265,7 @@ class Reader {
 				ex.printStackTrace();
 		    }
 		}
-		return encoded;
+		return encoded.toString();
 	}
 	
 	/*	read method will read the input file	*/
@@ -303,12 +305,12 @@ class Reader {
 		String filePath = Writer.getPath();
 		File input = new File(filePath);
 		
-		String text = "";
+		StringBuilder text = new StringBuilder();
 		try {
 	    	String line;
 		    br = new BufferedReader(new FileReader(input));
 		    while ((line = br.readLine()) != null) {
-		    	text += line;
+		    	text.append(line);
 		    }
 	    } 
 		catch (IOException e) {
@@ -323,6 +325,6 @@ class Reader {
 				ex.printStackTrace();
 		    }
 		}
-		return text;
+		return text.toString();
 	}
 }
