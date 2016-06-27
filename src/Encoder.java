@@ -94,7 +94,6 @@ public class Encoder {
 		for (int i = 0; i < 5+fill; i++)
 			num_frq.add(0);
 	}
-	
 	private static void setUpDoubleArray(String arg) throws Exception{
 		/* pad beginning with 97 zeros	*/
 		for (int i = 0; i < 97; i++)
@@ -103,7 +102,6 @@ public class Encoder {
 		Reader.readDoubleInput(arg, num_frq);
 		
 	}
-	
 	private static double round (double d, int i){
 		double out = d;
 		BigDecimal bd = new BigDecimal(out);
@@ -115,7 +113,6 @@ public class Encoder {
 		LINES = 0;
 		num_frq.clear();
 	}
-	
 	/*	Main method	*/
 	public static void main(String[] args) throws Exception{
 		
@@ -137,7 +134,7 @@ public class Encoder {
 		String decExt = ".dec1";
 		String output = Frequency.generateText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
 		Writer.writeFile(ht, output, encExt, decExt, true);
-		System.out.println("Generated and written " + k + " random 1 symbol charecters in testText, encoded them into testText" + encExt +" and decoded them in testText"+ decExt + "\n");
+		System.out.println("Generated and written " + k + " random 1 symbol characters in testText, encoded them into testText" + encExt +" and decoded them in testText"+ decExt + "\n");
 	
 	/* PART 4	*/
 		System.out.println("PART 4");
@@ -154,11 +151,9 @@ public class Encoder {
 			System.out.println(LINES + " sorry input is too large for a 2 symbol implemantion.");
 			return;
 		}
-			
 		encExt = ".enc2";
 		decExt = ".dec2";
 		output = Frequency.generateDoubleText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
-		
 		ht = new HuffmanTree(convertIntegers(num_frq));
 		
 		Writer.writeEncoding(ht, output, encExt, false);
@@ -172,9 +167,9 @@ public class Encoder {
 		System.out.println("PART 7");
 		double d3 = round(d1-d2, 3);
 		if (d3 > 0)
-			System.out.println("a " + d3 + "% efficncy increase from the 1 symbol implemnation");
+			System.out.println("a " + d3 + "% efficiency increase from the 1 symbol implementation");
 		else
-			System.out.println("a " + d3 + "% efficncy decrease from the 1 symbol implemnation");
+			System.out.println("a " + d3 + "% efficiency decrease from the 1 symbol implementation");
 	
 		
 	}
@@ -193,11 +188,9 @@ class Writer {
 	private static void setPath()throws Exception{
 		filepath = Reader.getPath().substring(0, Reader.getPath().lastIndexOf('/')+1) + filename;
 	}
-	
 	static String getPath()throws Exception{
 		return filepath;	
 	}
-	
 	/*	write method will write to the file	*/
 	static void writeFile (HuffmanTree ht, String content, String encExt, String decExt, boolean flag) throws Exception{
 		setPath();	
@@ -227,7 +220,6 @@ class Writer {
 		writer.write(content);
 		writer.close();
 	}
-	
 	static void writeDecoding (HuffmanTree ht, String encExt, String decExt, boolean flag) throws Exception{
 		
 		String encodedText = Reader.readEncoding(encExt);
@@ -270,7 +262,6 @@ class Writer {
 			for (int i = 0; i< charArray.length; i++)
 				System.out.println(charArray[i] + ": " + encodings.get(i));
 		}
-		
 		BufferedWriter writer = new BufferedWriter( new OutputStreamWriter( new FileOutputStream(filepath+decExt), "utf-8"));
 		writer.write(decodedText);
 		writer.close();
@@ -291,7 +282,6 @@ class Reader {
 	static String getPath(){
 		return filePath;
 	}
-
 	private static void setPath(String path)throws Exception{
 		filePath = path;
 		input = new File(path);
@@ -301,8 +291,6 @@ class Reader {
 		}
 		
 	}
-	
-	
 	/*	will read and return the encoded file may return null	*/
 	static String readEncoding(String encExt) throws Exception{
 		
@@ -332,7 +320,6 @@ class Reader {
 		}
 		return encoded.toString();
 	}
-	
 	/*	read method will read the input file	*/
 	static void readInput (String path, ArrayList <Integer> num_frq) throws Exception{
 		setPath(path);	
@@ -362,7 +349,6 @@ class Reader {
 		    }
 		}
 	}
-	
 	/*	read method will read the input file	*/
 	static void readDoubleInput (String path, ArrayList <Integer> num_frq) throws Exception{
 		setPath(path);	
@@ -404,7 +390,6 @@ class Reader {
 		    }
 		}
 	}
-	
 	/*	will read the testText file written by Writer, cannot be called before readInput(String, ArrayList <Integer>) 
 	 * returns a string	
 	 */
