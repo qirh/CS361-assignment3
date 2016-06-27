@@ -1,17 +1,24 @@
-UTEID: jd1234; bp5678;
-FIRSTNAME: Johnny; Brad;
-LASTNAME: Depp; Pitt;
-CSACCOUNT: johnyd; bradp;
-EMAIL: johnyd@cs.utexas.edu; bradp@cs.utexas.edu;
+UTEID: mp34495; soa322;
+FIRSTNAME: Ovais; Saleh;
+LASTNAME: Panjwani; Alghusson;
+CSACCOUNT: mp34495; almto3;
+EMAIL: ovais.panjwani@utexas.edu; almto3@hotmail.com;
 
 [Program 3]
 [Description]
-There are 6 java files: In XXX.java, We implemented some functions, e.g. .... Johnny wrote function/method A, B, C. Brad wrote function/method D, E, F. The most important method is A, which has four main steps : 1..., 2..., 3..., 4... To complie our program, you need to use "javac *.java". To run our program, you need to use "java SecureSystem instructionList"
+There are 5 java files:
+We got BinaryHeap.java, Bitstream.java, HuffmanTree.java from the Internet, it's in implementation of the HuffmanTree algorithm. Link:
 https://gist.github.com/snarkbait/86c7a4bc743e8f327dbc
 https://gist.github.com/snarkbait/c939953337ad74d1ab04
 
+For the other two files, Encoder.java and Frequency.java we handeled everything that was required by the specs. Encoder.java is the driver class and has the classes Encoder, Writer and Reader. Frequency.java has the classes Frequency and Range. These 5 classes all work together to produce the output. We both worked together equally, usually on the same screen throughout this project.
+run the program with:
+javac *.java
+java Encoder [path to test cast]
+
+
 [Finish]
-We finished the most/half/one quarter of this assignment. There are some bugs in function/method A in XXX.java file. Some special test cases won't work, the reason is ... For YYY.java, we don't know how to implement the sort method.
+We finished all requirements for this assignment, the reason it took us extra time to submit is that we both were busy during the last week and the 2 symbol implementation was really hard to implement without hogging a lot of memory, it's either we didn't fully understand what's asked, or we just didn't know how to implement it efficiently. for instance, for a 26 char input file (max input file), there will be a 26*26 = 676 symbol for this huffman implementation and out huffman implementation might break as such high numbers. However, for the 1 symbol implementation, all inputs should work.
 
 [Test Case 1]
 

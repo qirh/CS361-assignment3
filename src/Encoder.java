@@ -149,10 +149,18 @@ public class Encoder {
 	/* PART 5	*/
 		System.out.println("PART 5&6");
 		setUpDoubleArray(args[0]);
+		
+		if(LINES >= 145){
+			System.out.println(LINES + " sorry input is too large for a 2 symbol implemantion.");
+			return;
+		}
+			
 		encExt = ".enc2";
 		decExt = ".dec2";
 		output = Frequency.generateDoubleText(num_frq, ALPHABET_SIZE, k, encExt, decExt);
+		
 		ht = new HuffmanTree(convertIntegers(num_frq));
+		
 		Writer.writeEncoding(ht, output, encExt, false);
 		Writer.writeDecoding(ht, encExt, decExt, false);
 		System.out.println("Generated " + k + " random 2 symbol charecters, encoded them into testText" + encExt +" and decoded them in testText"+ decExt);
@@ -164,9 +172,9 @@ public class Encoder {
 		System.out.println("PART 7");
 		double d3 = round(d1-d2, 3);
 		if (d3 > 0)
-			System.out.println("a " + d3 + "% efficncy increase");
+			System.out.println("a " + d3 + "% efficncy increase from the 1 symbol implemnation");
 		else
-			System.out.println("a " + d3 + "% efficncy decrease");
+			System.out.println("a " + d3 + "% efficncy decrease from the 1 symbol implemnation");
 	
 		
 	}
