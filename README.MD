@@ -27,8 +27,10 @@ We finished all requirements for this assignment.
 
 ### Test Case 1
 * **Command line**
+```
     $ javac *.java
     $ java Encoder test1
+```
 * **Input**
 ```
     22
@@ -59,11 +61,8 @@ We finished all requirements for this assignment.
         j: 011111
         k: 01110
 ```
-
     * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
-
     * **Part 4:** bits per symbol for 10000 characters: 3.18. A 1.04% difference from entropy
-
     * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters = 6.34. A 0.658% difference from entropy
 ```
             aa: 01001
@@ -294,8 +293,10 @@ We finished all requirements for this assignment.
 
 ### Test Case 3
 * **Command line**
+```
         $ javac *.java
         $ java Encoder test3
+```
 * **Input**
 ```
   3
