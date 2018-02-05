@@ -26,11 +26,9 @@ We finished all requirements for this assignment.
 
 
 ### Test Case 1
-
 * **Command line**
         $ javac *.java
         $ java Encoder test1
-
 * **Input**
         22
         14
@@ -43,7 +41,6 @@ We finished all requirements for this assignment.
         8
         3
         3
-
 * **Output**
     * **Part 1:** The Entropy of this text is: 3.15
     * **Part 2:**
@@ -185,7 +182,6 @@ We finished all requirements for this assignment.
             ki: 1110001000
             kj: 10100110101
             kk: 10100110110
-
     * **Part 7:** A 0.382% efficiency increase from the 1 symbol implementation
 
 
@@ -283,198 +279,198 @@ We finished all requirements for this assignment.
             hh: 1001011
     * **Part 7:** A 0.963% efficiency increase from the 1 symbol implementation
 
-    ### Test Case 3
-    * **Command line**
-            $ javac *.java
-            $ java Encoder test3
-    * **Input**
-      3
-      1
-      26
-      17
-      2
-      25
-      16
-    * **Output**
-        * **Part 1:** The Entropy of this text is: 2.29
-        * **Part 2:**
-          a: 0100
-          b: 01010
-          c: 11
-          d: 00
-          e: 01011
-          f: 10
-          g: 011
-        * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
-        * **Part 4:** Bits per symbol for 10000 characters: 2.32. A 1.64% difference from entropy
-        * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 4.6. A 0.571% difference from entropy
-          aa: 0100111001
-          ab: 110011001011
-          ac: 1100100
-          ad: 0100010
-          ae: 11001100110
-          af: 1010111
-          ag: 11001110
-          ba: 110011001110
-          bb: 1100110011110
-          bc: 01001001
-          bd: 101010011
-          be: 1100110011111
-          bf: 01000011
-          bg: 101010010
-          ca: 1100101
-          cb: 01001000
-          cc: 1111
-          cd: 1000
-          ce: 0100101
-          cf: 1101
-          cg: 0011
-          da: 0100011
-          db: 110011000
-          dc: 0111
-          dd: 11000
-          de: 10101011
-          df: 0110
-          dg: 10011
-          ea: 0100111000
-          eb: 110011001010
-          ec: 0100110
-          ed: 10101010
-          ee: 11001100100
-          ef: 0100000
-          eg: 01001111
-          fa: 1010110
-          fb: 01000010
-          fc: 1110
-          fd: 0101
-          fe: 11001111
-          ff: 1011
-          fg: 0001
-          ga: 11001101
-          gb: 010011101
-          gc: 0010
-          gd: 10100
-          ge: 10101000
-          gf: 0000
-          gg: 10010
-        * **Part 7:** A 1.07% efficiency increase from the 1 symbol implementation
+### Test Case 3
+* **Command line**
+        $ javac *.java
+        $ java Encoder test3
+* **Input**
+  3
+  1
+  26
+  17
+  2
+  25
+  16
+* **Output**
+    * **Part 1:** The Entropy of this text is: 2.29
+    * **Part 2:**
+      a: 0100
+      b: 01010
+      c: 11
+      d: 00
+      e: 01011
+      f: 10
+      g: 011
+    * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
+    * **Part 4:** Bits per symbol for 10000 characters: 2.32. A 1.64% difference from entropy
+    * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 4.6. A 0.571% difference from entropy
+      aa: 0100111001
+      ab: 110011001011
+      ac: 1100100
+      ad: 0100010
+      ae: 11001100110
+      af: 1010111
+      ag: 11001110
+      ba: 110011001110
+      bb: 1100110011110
+      bc: 01001001
+      bd: 101010011
+      be: 1100110011111
+      bf: 01000011
+      bg: 101010010
+      ca: 1100101
+      cb: 01001000
+      cc: 1111
+      cd: 1000
+      ce: 0100101
+      cf: 1101
+      cg: 0011
+      da: 0100011
+      db: 110011000
+      dc: 0111
+      dd: 11000
+      de: 10101011
+      df: 0110
+      dg: 10011
+      ea: 0100111000
+      eb: 110011001010
+      ec: 0100110
+      ed: 10101010
+      ee: 11001100100
+      ef: 0100000
+      eg: 01001111
+      fa: 1010110
+      fb: 01000010
+      fc: 1110
+      fd: 0101
+      fe: 11001111
+      ff: 1011
+      fg: 0001
+      ga: 11001101
+      gb: 010011101
+      gc: 0010
+      gd: 10100
+      ge: 10101000
+      gf: 0000
+      gg: 10010
+    * **Part 7:** A 1.07% efficiency increase from the 1 symbol implementation
 
-        ### Test Case 4
-        * **Command line**
-                $ javac *.java
-                $ java Encoder test4
-        * **Input**
-          3
-          1
-          26
-          19
-        * **Output**
-            * **Part 1:** The Entropy of this text is: 1.38
-            * **Part 2:**
-              a: 001
-              b: 000
-              c: 1
-              d: 01
-            * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
-            * **Part 4:** Bits per symbol for 10000 characters: 1.55. A 12.0% difference from entropy
-            * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 2.78. A 1.08% difference from entropy
-              aa: 111111101
-              ab: 1111111000
-              ac: 11101
-              ad: 111101
-              ba: 11111110011
-              bb: 11111110010
-              bc: 1111110
-              bd: 11111111
-              ca: 11100
-              cb: 1111001
-              cc: 10
-              cd: 00
-              da: 111110
-              db: 1111000
-              dc: 01
-              dd: 110
-            * **Part 7:** A 10.9% efficiency increase from the 1 symbol implementation
+### Test Case 4
+* **Command line**
+        $ javac *.java
+        $ java Encoder test4
+* **Input**
+  3
+  1
+  26
+  19
+* **Output**
+    * **Part 1:** The Entropy of this text is: 1.38
+    * **Part 2:**
+      a: 001
+      b: 000
+      c: 1
+      d: 01
+    * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
+    * **Part 4:** Bits per symbol for 10000 characters: 1.55. A 12.0% difference from entropy
+    * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 2.78. A 1.08% difference from entropy
+      aa: 111111101
+      ab: 1111111000
+      ac: 11101
+      ad: 111101
+      ba: 11111110011
+      bb: 11111110010
+      bc: 1111110
+      bd: 11111111
+      ca: 11100
+      cb: 1111001
+      cc: 10
+      cd: 00
+      da: 111110
+      db: 1111000
+      dc: 01
+      dd: 110
+    * **Part 7:** A 10.9% efficiency increase from the 1 symbol implementation
 
-            ### Test Case 5
-            * **Command line**
-                    $ javac *.java
-                    $ java Encoder testcoin
-            * **Input**
-              2
-              1
-            * **Output**
-                * **Part 1:** The Entropy of this text is: 0.918
-                * **Part 2:**
-                  a: 1
-                  b: 0
-                * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
-                * **Part 4:** Bits per symbol for 10000 characters: 1.00. A 8.52% difference from entropy
-                * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 1.89. A 2.77% difference from entropy
-                  aa: 0
-                  ab: 111
-                  ba: 10
-                  bb: 110
-                * **Part 7:** A 5.75% efficiency increase from the 1 symbol implementation
+### Test Case 5
+* **Command line**
+        $ javac *.java
+        $ java Encoder testcoin
+* **Input**
+  2
+  1
+* **Output**
+    * **Part 1:** The Entropy of this text is: 0.918
+    * **Part 2:**
+      a: 1
+      b: 0
+    * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
+    * **Part 4:** Bits per symbol for 10000 characters: 1.00. A 8.52% difference from entropy
+    * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 1.89. A 2.77% difference from entropy
+      aa: 0
+      ab: 111
+      ba: 10
+      bb: 110
+    * **Part 7:** A 5.75% efficiency increase from the 1 symbol implementation
 
-                ### Test Case 6
-                * **Command line**
-                        $ javac *.java
-                        $ java Encoder testdice
-                * **Input**
-                  1
-                  1
-                  1
-                  1
-                  1
-                  1
+### Test Case 6
+* **Command line**
+        $ javac *.java
+        $ java Encoder testdice
+* **Input**
+  1
+  1
+  1
+  1
+  1
+  1
 
-                * **Output**
-                    * **Part 1:** The Entropy of this text is: 2.58
-                    * **Part 2:**
-                      a: 00
-                      b: 101
-                      c: 111
-                      d: 110
-                      e: 100
-                      f: 01
-                    * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
-                    * **Part 4:** Bits per symbol for 10000 characters: 2.67. A 3.25% difference from entropy
-                    * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 5.22. A 0.955% difference from entropy
-                      aa: 01110
-                      ab: 01011
-                      ac: 00101
-                      ad: 00001
-                      ae: 111011
-                      af: 01000
-                      ba: 11011
-                      bb: 10000
-                      bc: 01101
-                      bd: 00011
-                      be: 111000
-                      bf: 01001
-                      ca: 11010
-                      cb: 10010
-                      cc: 10011
-                      cd: 10001
-                      ce: 10111
-                      cf: 10101
-                      da: 111101
-                      db: 11001
-                      dc: 111111
-                      dd: 111001
-                      de: 00100
-                      df: 111110
-                      ea: 11000
-                      eb: 00010
-                      ec: 111010
-                      ed: 111100
-                      ee: 10100
-                      ef: 01100
-                      fa: 10110
-                      fb: 00110
-                      fc: 00111
-                      fd: 00000
-                      fe: 01010
-                      ff: 01111
-                    * **Part 7:** A 2.29% efficiency increase from the 1 symbol implementation
+* **Output**
+    * **Part 1:** The Entropy of this text is: 2.58
+    * **Part 2:**
+      a: 00
+      b: 101
+      c: 111
+      d: 110
+      e: 100
+      f: 01
+    * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
+    * **Part 4:** Bits per symbol for 10000 characters: 2.67. A 3.25% difference from entropy
+    * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 5.22. A 0.955% difference from entropy
+      aa: 01110
+      ab: 01011
+      ac: 00101
+      ad: 00001
+      ae: 111011
+      af: 01000
+      ba: 11011
+      bb: 10000
+      bc: 01101
+      bd: 00011
+      be: 111000
+      bf: 01001
+      ca: 11010
+      cb: 10010
+      cc: 10011
+      cd: 10001
+      ce: 10111
+      cf: 10101
+      da: 111101
+      db: 11001
+      dc: 111111
+      dd: 111001
+      de: 00100
+      df: 111110
+      ea: 11000
+      eb: 00010
+      ec: 111010
+      ed: 111100
+      ee: 10100
+      ef: 01100
+      fa: 10110
+      fb: 00110
+      fc: 00111
+      fd: 00000
+      fe: 01010
+      ff: 01111
+    * **Part 7:** A 2.29% efficiency increase from the 1 symbol implementation
