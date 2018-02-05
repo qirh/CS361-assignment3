@@ -1,7 +1,7 @@
-## CS361 Foundations of Security. Assignment 3 (Entropy) [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/361assignment4/master/LICENSE)
+## CS361 Foundations of Security. Assignment 3 (Entropy) [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://https://raw.githubusercontent.com/qirh/CS361-assignment3/master/LICENSE)
 
 ### Description
-Java project by me and [@Ovais](https://github.com/theBrovais). Done for CS f361, taught by the amazing Dr. Bill Young in the summer of 2016. For assignment details, please look [here](https://github.com/qirh/361assignment3/blob/master/assignment-3.pdf)
+Java project by me and [@Ovais](https://github.com/theBrovais). Done for CS f361, taught by the amazing Dr. Bill Young in the summer of 2016. For assignment details, please look [here](https://github.com/qirh/CS361-assignment3/blob/master/assignment3.pdf)
 
 **There are 5 java files:**
 * We got *BinaryHeap.java*, *Bitstream.java*, *HuffmanTree.java* from [here](https://gist.github.com/snarkbait/86c7a4bc743e8f327dbc) & [here](https://gist.github.com/snarkbait/c939953337ad74d1ab04) The files contain an implementation of the HuffmanTree algorithm.
