@@ -27,20 +27,20 @@ We finished all requirements for this assignment.
 
 ### Test Case 1
 * **Command line**
-        $ javac *.java
-        $ java Encoder test1
+    $ javac *.java
+    $ java Encoder test1
 * **Input**
-        22
-        14
-        2
-        21
-        12
-        9
-        23
-        20
-        8
-        3
-        3
+    22
+    14
+    2
+    21
+    12
+    9
+    23
+    20
+    8
+    3
+    3
 * **Output**
     * **Part 1:** The Entropy of this text is: 3.15
     * **Part 2:**
