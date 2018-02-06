@@ -58,6 +58,7 @@ i: 0110
 j: 011111
 k: 01110
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** bits per symbol for 10000 characters: 3.18. A 1.04% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters = 6.34. A 0.658% difference from entropy
@@ -184,6 +185,7 @@ ki: 1110001000
 kj: 10100110101
 kk: 10100110110
 ```
+  
   * **Part 7:** A 0.382% efficiency increase from the 1 symbol implementation
 
 
@@ -217,6 +219,7 @@ f: 00110
 g: 110
 h: 000
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** Bits per symbol for 10000 characters: 2.68. A 1.76% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 5.3. A 0.797% difference from entropy
@@ -286,6 +289,7 @@ hf: 100101001
 hg: 010111
 hh: 1001011
 ```
+  
   * **Part 7:** A 0.963% efficiency increase from the 1 symbol implementation
 
 ### Test Case 3
@@ -316,6 +320,7 @@ e: 01011
 f: 10
 g: 011
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** Bits per symbol for 10000 characters: 2.32. A 1.64% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 4.6. A 0.571% difference from entropy
@@ -370,6 +375,7 @@ ge: 10101000
 gf: 0000
 gg: 10010
 ```
+  
   * **Part 7:** A 1.07% efficiency increase from the 1 symbol implementation
 
 ### Test Case 4
@@ -394,6 +400,7 @@ b: 000
 c: 1
 d: 01
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** Bits per symbol for 10000 characters: 1.55. A 12.0% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 2.78. A 1.08% difference from entropy
@@ -415,6 +422,7 @@ db: 1111000
 dc: 01
 dd: 110
 ```
+  
   * **Part 7:** A 10.9% efficiency increase from the 1 symbol implementation
 
 ### Test Case 5
@@ -435,6 +443,7 @@ $ java Encoder testcoin
 a: 1
 b: 0
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** Bits per symbol for 10000 characters: 1.00. A 8.52% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 1.89. A 2.77% difference from entropy
@@ -444,6 +453,7 @@ ab: 111
 ba: 10
 bb: 110
 ```
+  
   * **Part 7:** A 5.75% efficiency increase from the 1 symbol implementation
 
 ### Test Case 6
@@ -472,6 +482,7 @@ d: 110
 e: 100
 f: 01
 ```
+  
   * **Part 3:** Generated and written 10000 random 1 symbol characters in testText, encoded them into testText.enc1 and decoded them in testText.dec1
   * **Part 4:** Bits per symbol for 10000 characters: 2.67. A 3.25% difference from entropy
   * **Parts 5&6:** Generated 10000 random 2 symbol characters, encoded them into testText.enc2 and decoded them in testText.dec2. Bits per symbol for 10000 characters: 5.22. A 0.955% difference from entropy
@@ -513,4 +524,5 @@ fd: 00000
 fe: 01010
 ff: 01111
 ```
+  
   * **Part 7:** A 2.29% efficiency increase from the 1 symbol implementation
